@@ -11,12 +11,15 @@
   ],
   "scripts": {
     "lint": "standard --verbose | snazzy",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "build": "npm run test && gulp watch",
+    "start": "npm run build && node server.js"
   },
   "author": "platzi",
   "dependencies": {
     "express": "^4.13.4",
-    "materialize-css": "^0.97.7"
+    "materialize-css": "^0.97.7",
+    "page": "^1.7.1"
   },
   "devDependencies": {
     "babelify": "^7.3.0",
@@ -27,6 +30,7 @@
     "pug": "^2.0.0-beta6",
     "snazzy": "^5.0.0",
     "standard": "^8.3.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
   }
 }
