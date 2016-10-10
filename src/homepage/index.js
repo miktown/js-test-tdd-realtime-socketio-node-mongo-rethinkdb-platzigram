@@ -1,7 +1,10 @@
 var page = require('page')
 var empty = require('empty-element')
+var template = require('./template')
+var title = require('title')
 
 page('/', function (ctx, next) {
+  title('Homepage')
   var main = document.getElementById('main-container')
-  empty(main).innerHTML = 'Home <a href="/signup">go signup</a>'
+  empty(main).appendChild(template)
 })
