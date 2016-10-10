@@ -10,7 +10,7 @@
     "platzigram"
   ],
   "scripts": {
-    "lint": "standard --verbose | snazzy",
+    "lint": "standard --format --fix --verbose | snazzy",
     "test": "npm run lint",
     "build": "npm run test && gulp watch",
     "start": "npm run build & node server.js"

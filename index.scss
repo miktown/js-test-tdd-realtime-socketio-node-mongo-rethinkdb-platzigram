@@ -1,6 +1,13 @@
 $secondary-color:#125688;
 @import "node_modules/materialize-css/sass/materialize.scss";
 
+.signup-box{
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
 body {
   background: #fafafa;
   color: #125688;
