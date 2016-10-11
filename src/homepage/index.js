@@ -10,7 +10,7 @@ page('/', function (ctx, next) {
   var pictures = [
     {
       user: {
-        username: 'slifszyc',
+        username: 'miktown',
         avatar: 'mimotic-flat.png'
       },
       url: 'office.jpg',
@@ -19,11 +19,56 @@ page('/', function (ctx, next) {
     },
     {
       user: {
-        username: 'slifszyc',
+        username: 'miktown',
         avatar: 'mimotic-flat.png'
       },
       url: 'office.jpg',
       likes: 2,
+      liked: true
+    },
+    {
+      user: {
+        username: 'miktown',
+        avatar: 'mimotic-flat.png'
+      },
+      url: 'office.jpg',
+      likes: 10,
+      liked: true
+    },
+    {
+      user: {
+        username: 'miktown',
+        avatar: 'mimotic-flat.png'
+      },
+      url: 'office.jpg',
+      likes: 10,
+      liked: true
+    },
+    {
+      user: {
+        username: 'miktown',
+        avatar: 'mimotic-flat.png'
+      },
+      url: 'office.jpg',
+      likes: 10,
+      liked: true
+    },
+    {
+      user: {
+        username: 'miktown',
+        avatar: 'mimotic-flat.png'
+      },
+      url: 'office.jpg',
+      likes: 10,
+      liked: true
+    },
+    {
+      user: {
+        username: 'miktown',
+        avatar: 'mimotic-flat.png'
+      },
+      url: 'office.jpg',
+      likes: 10,
       liked: true
     }
   ]
