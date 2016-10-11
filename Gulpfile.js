@@ -37,7 +37,7 @@ function compile (watch) {
 
   if (watch) {
     bundle.on('update', function (ids) {
-      console.log('--> file: ', ids)
+      console.log('--> file(s): ', ids)
       rebundle()
     })
 

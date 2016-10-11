@@ -4,7 +4,29 @@ var template = require('./template')
 var title = require('title')
 
 page('/', function (ctx, next) {
-  title('Homepage')
+  title('Platzigram')
   var main = document.getElementById('main-container')
-  empty(main).appendChild(template)
+
+  var pictures = [
+    {
+      user: {
+        username: 'slifszyc',
+        avatar: 'mimotic-flat.png'
+      },
+      url: 'office.jpg',
+      likes: 10,
+      liked: true
+    },
+    {
+      user: {
+        username: 'slifszyc',
+        avatar: 'mimotic-flat.png'
+      },
+      url: 'office.jpg',
+      likes: 2,
+      liked: true
+    }
+  ]
+
+  empty(main).appendChild(template(pictures))
 })
